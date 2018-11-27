@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class BasicTest {
+public class BaseTest {
 
     WebDriver driver;
 
@@ -15,10 +15,11 @@ public class BasicTest {
         options.addArguments("start-maximized");
         options.addArguments("disable-extensions");
         driver = new ChromeDriver(options);
+        driver.get("https://jqueryui.com/");
     }
 
     @AfterMethod
-    public void quitDriver(){
+    public void quitDriver() {
         driver.quit();
     }
 

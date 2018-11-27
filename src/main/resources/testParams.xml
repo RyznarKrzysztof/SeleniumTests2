@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="simple_suite">
+  
+    <test name="sliderTest">
+        <parameter name="param1"  value="80" />
+        <parameter name="param2"  value="50" />
+        <parameter name="param3"  value="55" />
+		<parameter name="param4"  value="55" />
+        <classes>
+            <class name="SeleniumTests"/>
+        </classes>
+    </test>
+  
+</suite>
